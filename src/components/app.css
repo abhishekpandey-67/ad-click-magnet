@@ -1,0 +1,139 @@
+body{
+    margin: 0px;
+    font-family: 'Red Hat Display', sans-serif !important;
+    scroll-behavior: smooth;
+    background-color: #090909 !important;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    .spline {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        background-color: #000;
+    }
+}
+
+.model {
+    position: absolute;
+    top:0;
+    z-index: -1;
+    max-height: 90vh;
+}
+.text-gen {
+    font-size: 40px;
+}
+
+
+.home-hero-sec{
+    height: 100vh;
+}
+
+/* transparent section */
+
+.Transparent-section {
+    height: 90vh;
+    z-index: -999999;
+    background-color: transparent;
+}
+
+/* Optimize section */
+
+.optimize-section {
+    margin-top: 83vh;
+    height: 100%;
+}
+
+
+
+/* nav bar */
+.navbar {
+    transition: 1s;
+    backdrop-filter: blur(7px);
+}
+
+.navbar:hover {
+    box-shadow: 0px 0px 20px 1px #fff;
+    
+}
+
+@keyframes widthIncrease {
+    from {
+    }
+    to {
+    }
+}
+
+.navlinks {
+    width: 30%;
+    animation-duration: 2s;
+    transition: 0.4s;
+    animation-name:widthIncrease;
+}
+.navlinks:hover {
+    width: 50%;
+}
+
+
+.getintouch-card{
+    background-color: #000;
+    color: #fff;
+    width: auto;
+    gap: 4px;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 3.4rem;
+    text-decoration: none;
+    cursor: none;
+    border: 1px solid #825fff;
+    transition: all 0.5s;
+}
+.getintouch-card:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+
+/* hero section */
+.hero-content {
+    position: absolute;
+    top: 25vh;
+    width: max-content;
+    margin-left: 50px;
+    
+}
+
+
+.hero-h-title{
+    color: white;
+    background-image: linear-gradient(to bottom, #ffffff, #00000050);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 5.12rem;
+    font-weight: 500;
+    line-height: 120%;
+    max-width: 768px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width:1200px) {
+    .hero-h-title{
+        font-size:3.5rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .hero-h-title{
+        font-size:2rem;
+    }
+}
+.inner-color-title{
+    background-image: linear-gradient(to bottom, #fff, grey) ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text
+}
