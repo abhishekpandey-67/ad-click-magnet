@@ -1,4 +1,5 @@
 
+
 import HeroSection from "@/components/homeSections/HeroSection";
 import Cursor from '../components/Cursor';
 import NextNProgress from 'nextjs-progressbar';
@@ -7,7 +8,8 @@ import {OptimizeSection} from '../components/homeSections/optimizeSection'
 import Section2 from "@/components/homeSections/Section2";
 import Section3 from "@/components/homeSections/Section3";
 import Section5 from "@/components/homeSections/Section5";
-//import { useEffect, useState } from "react";
+import Section6 from "@/components/homeSections/Section6";
+import { useEffect, useState } from "react";
 //import Loading from "@/components/loading";
 //import TextSection from '@/components/TextSection'
 
@@ -20,24 +22,23 @@ export default function Home() {
 
   return (
     <>
-      <Cursor />
-      <HeroSection />
-      <Section2 />
-      <Section3 />
-      <Section5 />
-    </>
+        <Cursor />
+        <HeroSection />
+        <Section2 />
+        <Section3 />
+        <Section5 />
+        <Section6 />
+      </>
+    
       
   );
 }
 
 //<>
-//{!loading ? (
-//  <>
-//    <Cursor />
-//    <HeroSection />
-//  </>
-//) : (
-//  <Loading />
-//)}
-//</>
+//      {!loading ? (
+//        
+//      ) : (
+//        <Loading />
+//      )}
+//      </>
 

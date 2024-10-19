@@ -1,3 +1,5 @@
+"use client";
+
 import Spline from '@splinetool/react-spline/next';
 
 export default function Loader() {
@@ -9,3 +11,4 @@ export default function Loader() {
     </main>
   );
 }
+

@@ -17,6 +17,8 @@ export const HeroParallax = ({
     title: string;
     link: string;
     thumbnail: string;
+    head: string;
+    para: string;
   }[];
 }) => {
   const firstRow = products.slice(0, 5);
@@ -57,7 +59,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className=" h-[380vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -67,7 +69,7 @@ export const HeroParallax = ({
           translateY,
           opacity,
         }}
-        className=""
+        className=" "
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
           {firstRow.map((product) => (
@@ -75,6 +77,8 @@ export const HeroParallax = ({
               product={product}
               translate={translateX}
               key={product.title}
+              head={product.head}
+              para={product.para}
             />
           ))}
         </motion.div>
@@ -84,6 +88,9 @@ export const HeroParallax = ({
               product={product}
               translate={translateXReverse}
               key={product.title}
+              head={product.head}
+              para={product.para}
+
             />
           ))}
         </motion.div>
@@ -93,6 +100,8 @@ export const HeroParallax = ({
               product={product}
               translate={translateX}
               key={product.title}
+              head={product.head}
+              para={product.para}
             />
           ))}
         </motion.div>
@@ -110,7 +119,7 @@ export const Header = () => {
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
       Forget expensive tech that take months to implement. From marketing automation software to customer relationship management, our USA digital marketing company provides the martech businesses need to:
       </p>
-      <ul className="sec5-content-list max-w-2xl text-base pl-4 md:text-xl mt-8 dark:text-neutral-200">
+      <ul className="sec6-content-list max-w-2xl text-base pl-4 md:text-xl mt-8 dark:text-neutral-200">
         <li>Track ROI (for offline and online channels)</li> <br />
         <li>Make strategic decisions about budget allocations</li><br />
         <li>Reduce software and technology costs</li>
@@ -129,6 +138,8 @@ export const ProductCard = ({
     title: string;
     link: string;
     thumbnail: string;
+    head: string;
+    para: string;
   };
   translate: MotionValue<number>;
 }) => {
@@ -147,7 +158,7 @@ export const ProductCard = ({
         href={product.link}
         className="block group-hover/product:shadow-2xl "
       >
-        <div className="sec5-card flex h-full w-full text-black bg-white">
+        <div className="sec6-card flex h-full w-full text-black bg-white">
             <Image
             src={product.thumbnail}
             height="200"
@@ -155,12 +166,14 @@ export const ProductCard = ({
             className="object-cover w-full object-left-top absolute  inset-0"
             alt={product.title}
             />
-            <div className="sec5-card-content">
-                <h1 className="sec5-card-head text-center" >{head}</h1>
-                <p className="sec5-card-para">Make Smareter marketing decisions and miximize  your return with full transparency into omnichannel performance</p>
-                <ul>
-                    <li>Automatically calculate cost per lead per marketing channel</li>    
+            <div className="sec6-card-content">
+                <h1 className="sec6-card-head text-center" >{head}</h1>
+                <p className="sec6-card-para">{para}</p>
+                <ul className="sec6-content-list">
+                    <li className="sec6-content-list-item">Automatically calculate cost per lead per marketing channel</li>    
+                    
                     <li>Easily compare channel performance to make better investment decisions</li>    
+                    
                     <li>Forecast results and model ROI scenarios</li>    
                 </ul>            
             </div>

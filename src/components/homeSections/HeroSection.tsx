@@ -18,30 +18,12 @@ export default function HeroSection({className}: {className?: string}) {
             <HeroModel />
             <header>
                 <div className={cn("fixed top-7 inset-x-0 mx-auto z-50", className)}>
-
                     <Menu setActive={setActive}>
                         <Link href="/" className="cursor-none">
-                            <MenuItem setActive={setActive} active={active} item="Home">
-                                <div className="flex flex-col space-y-4 text-sm">
-                                    <HoveredLink href="/web-dev">Web dev</HoveredLink>
-                                    <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-                                    <HoveredLink href="/seo">Search engine optimization</HoveredLink>
-                                    <HoveredLink href="/branding">Branding</HoveredLink>
-                                </div>
-                            </MenuItem>
+                            <MenuItem setActive={setActive} active={active} item="Home" />
                         </Link>
                         <Link href="/services" className="cursor-none">
-                            <MenuItem setActive={setActive} active={active} item="Services">
-                                <div className="flex flex-col space-y-4 text-sm">
-                                    
-                                    <ProductItem title="design" description="Website Design
-                                                Website Redesign
-                                                Rapid Web Design
-                                                Social Media Design
-                                                Ecommerce Website Design
-                                                Email Marketing Testing & Design" href="/ui-ux-design" src='https://tse4.mm.bing.net/th?id=OIP.doYHfVKgVncrGIL5jmSOMgHaE8&pid=Api&P=0&h=180'  />
-                                </div>
-                            </MenuItem>
+                            <MenuItem setActive={setActive} active={active} item="Services" />
                         </Link>
                         <Link href="/portfolio" className="cursor-none">
                             <MenuItem setActive={setActive} active={active} item="Portfolio" />
@@ -75,5 +57,15 @@ export default function HeroSection({className}: {className?: string}) {
         );
     }
             
+/* <div className="flex flex-col space-y-4 text-sm">
+                                    
+<ProductItem title="design" description="Website Design
+Website Redesign
+Rapid Web Design
+Social Media Design
+Ecommerce Website Design
+Email Marketing Testing & Design" href="/ui-ux-design" src='https://tse4.mm.bing.net/th?id=OIP.doYHfVKgVncrGIL5jmSOMgHaE8&pid=Api&P=0&h=180'  />
+</div> 
 
+*/
         
