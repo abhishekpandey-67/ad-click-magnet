@@ -43,12 +43,7 @@ body{
     background-color: transparent;
 }
 
-/* Optimize section */
 
-.optimize-section {
-    margin-top: 83vh;
-    height: 100%;
-}
 
 
 
@@ -71,7 +66,7 @@ body{
 }
 
 .navlinks {
-    width: 30%;
+    width: 35%;
     animation-duration: 2s;
     transition: 0.4s;
     animation-name:widthIncrease;
@@ -136,4 +131,76 @@ body{
     background-image: linear-gradient(to bottom, #fff, grey) ;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text
+}
+
+/* section 2 */
+
+.sec2-container {
+    margin-top: 80vh;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-image: linear-gradient(90deg, #fff, #000000);
+    height: 50vh;
+    padding: 100px;
+}
+
+.text-area {
+    color: black;
+    position: absolute;
+    opacity: 0.2;
+    width: 100%;
+    font-size: 50px;
+}
+.text-area-hover {
+    color: black;
+    position: absolute;
+    opacity: 1;
+    width: 20%;
+    font-size: 50px;
+    overflow:hidden;
+    white-space: nowrap;
+}
+
+/* section 3 */
+
+.input-container {
+    position: relative;
+    top: -150px;
+}
+
+/* Optimize section */
+
+.optimize-section {
+    
+}
+
+.sec5-card {
+    
+}
+
+.sec5-content-list {
+    list-style-type: bullet;
+    gap: 10px;
+}
+.sec5-card-content {
+    z-index: 99;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: "Oswald", sans-serif;
+    
+}
+.sec5-card-head {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+    
+}
+.sec5-card-para {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
