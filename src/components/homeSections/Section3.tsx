@@ -1,7 +1,8 @@
 "use client";
 
-import { PlaceholdersAndVanishInput } from "../ui/placeholders-and-vanish-input";
 import Section3Model from "../3dmodels/setion3Model";
+import { PlaceholdersAndVanishInput } from "../ui/placeholders-and-vanish-input";
+//import Section3Model from "../3dmodels/setion3Model";
 
 function PlaceholdersAndVanishInputDemo() {
     const placeholders = [

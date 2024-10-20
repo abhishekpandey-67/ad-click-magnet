@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -69,7 +69,7 @@ export function HoverBorderGradient({
     >
       <div
         className={cn(
-          "w-40 text-white text-center z-10 bg-black px-4 py-4 rounded-[inherit]",
+          "w-48 gap-4  text-white text-center z-10 bg-black px-4 py-4 rounded-[inherit]",
           className
         )}
       >

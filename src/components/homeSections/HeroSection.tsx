@@ -1,21 +1,20 @@
 "use client";
 
 import "../../components/app.css";
-import Image from "next/image";
 import HeroModel from "../3dmodels/heroModel";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import {Menu, MenuItem, ProductItem, HoveredLink} from '../ui/navbarMenu';
 import { useState } from "react";
 //import { Button } from "./ui/moving-border";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
+import { Menu, MenuItem } from "../ui/navbarMenu";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function HeroSection({className}: {className?: string}) {
     const [active, setActive] = useState<string | null>(null);
     return (
         <>
-            <HeroModel />
             <header>
                 <div className={cn("fixed top-7 inset-x-0 mx-auto z-50", className)}>
                     <Menu setActive={setActive}>
@@ -45,10 +44,11 @@ export default function HeroSection({className}: {className?: string}) {
                     <HoverBorderGradient
                         containerClassName="rounded-full"
                         as="button"
-                        className="text-center dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+                        className="text-center dark:bg-black bg-white text-black dark:text-white flex items-center "
                     >
                         
                         <span>All Case Studies</span>
+                        <FaArrowRightLong />
                         </HoverBorderGradient>
                     </Link>
             </div>

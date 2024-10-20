@@ -4,6 +4,9 @@
 
 
 module.exports = {
+  reactStrictMode: true,
+  transpilePackages: ['@splinetool/react-spline'],
+  
     images: {
       remotePatterns: [
         {
@@ -13,7 +16,22 @@ module.exports = {
         },
         {
           protocol: 'https',
+          hostname: 'images.unsplash.com',
+          port: '',
+        },
+        {
+          protocol: 'https',
           hostname: 'res.cloudinary.com',
+          port: '',
+        },
+        {
+          protocol: 'https',
+          hostname: 'png.pngtree.com',
+          port: '',
+        },
+        {
+          protocol: 'https',
+          hostname: 'numerique.vamtam.com',
           port: '',
         },
       ],

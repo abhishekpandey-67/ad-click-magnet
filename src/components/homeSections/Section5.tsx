@@ -12,7 +12,7 @@ export default function Section5() {
       </div>
       <h2 className="our-services-head">Our Digital Services</h2>
     </div>
-    <div className="max-w-5xl mx-auto ">
+    <div className="max-w-5xl mx-auto sec5-cards-cont">
       <HoverEffect items={projects} />
     </div>
     </>

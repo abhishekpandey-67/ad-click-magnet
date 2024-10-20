@@ -3,7 +3,12 @@ import React from "react";
 import { HeroParallax } from "../ui/hero-parallax";
 
 export default function Section6() {
-  return <HeroParallax products={products} />;
+  return (
+    <div className="sec6-container">
+
+    <HeroParallax products={products} />;
+    </div>
+  )
 }
 export const products = [
   {

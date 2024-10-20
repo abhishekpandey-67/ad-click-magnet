@@ -133,30 +133,55 @@ body{
     -webkit-background-clip: text
 }
 
-/* section 2 */
+.after-hero-sec {
+    position:relative;
+    top: 85vh;
+}
 
-.sec2-container {
-    margin-top: 80vh;
+/* section 2 */
+.Companies-partner {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    background-image: linear-gradient(90deg, #bccacf,#bccacf, #000);
+    color: #000;
+    padding: 40px;
+    height: 20vh;
+    
+}
+.partner-not-ventor {
+    font-weight: bold;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.sec2-company-logo {
+    margin-right :20px;
+}
+
+.sec2-container {
+    position: relative;
+    top: -10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     background-image: linear-gradient(90deg, #fff, #000000);
+    border-bottom-left-radius: 50px;
     height: 50vh;
     padding: 100px;
 }
 
 .text-area {
-    color: black;
+    color: #fff;
     position: absolute;
     opacity: 0.2;
     width: 100%;
     font-size: 50px;
+    top: 50px;
 }
 .text-area-hover {
-    color: black;
+    color: #fff;
     position: absolute;
     opacity: 1;
     width: 20%;
+    top: 50px;
     font-size: 50px;
     overflow:hidden;
     white-space: nowrap;
@@ -165,8 +190,6 @@ body{
 /* section 3 */
 
 .input-container {
-    position: relative;
-    top: -150px;
 }
 
 
@@ -181,6 +204,9 @@ body{
     padding: 100px;
     gap: 30px;
 }
+.sec5-cards-cont {
+}
+
 .services {
     color: grey;
     font-size: 25px;
@@ -191,6 +217,10 @@ body{
     margin-top: 20px;
 }
 
+/* section 6 */
+
+.sec6-container {
+}
 
 
 /* Optimize section 6 */
@@ -236,4 +266,351 @@ body{
     margin-bottom: 10px;
 }
 
+/* about section */
+.about-sec-container {
+    background-color: #fff;
+    padding: 70px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 1px #fff;
+    transition: 0.4s;
+    color: #000;
+    height: 85vh;
+}
+.about-sec-container:hover {
+    box-shadow: 0px 0px 20px 1px #fff;
 
+}
+.about-sec-acm {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.about-sec-head {
+    font-weight: bold;
+    font-size: 40px;
+    width: 180%;
+}
+.about-sec-right-cont {
+    width: 100%;
+}
+.about-sec-right-para {
+    margin-bottom: 35px;
+    font-weight: 300;
+    color: grey;
+}
+.more-about {
+    font-weight: bold;
+    font-size: 15px;
+}
+.more-about-underline {
+    width: 54%;
+    color: #825fff;
+    background-color: #825fff;
+    height: 2px;
+    border-radius: 10px;
+}
+.about-design {
+    width: 25%;
+}
+.design-circle {
+    height: 13px;
+    width: 13px;
+    background-color: #825fff;
+    border-radius: 10px;
+}
+.dooted-line {
+    border-top: 2px dashed grey;
+    width: 100%;
+}
+
+
+.about-sec-below-design-content-para {
+    width: 25%;
+}
+
+/* Team Section 8*/
+
+.team-sec-container {
+    position: relative;
+    bottom: 50px;
+    height: 100vh;
+    background-color: #000;
+    border-radius: 50px;
+    padding: 70px;
+    box-shadow: 0px 0px 10px 1px #000;
+}
+.team-sec-content {
+    width: 40%;
+}
+.team-behind {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.team-sec-head {
+    font-weight: bold;
+    font-size: 40px;
+    width: 180%;
+    margin-bottom: 25px;
+}
+.team-sec-para {
+    margin-bottom: 35px;
+    font-weight: 500;
+    color: grey;
+}
+
+.lets-connect-button {
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    height: 50px;
+    width: 200px;
+}
+.team-sec-image {
+    border-radius: 50px;
+}
+.small-img {
+    position: relative;
+    top: 200px;
+    right: 100px;
+    height: 320px;
+    width: 280px;
+    border: 10px solid #000;
+}
+
+/* section 7 */
+
+
+.sec7-container {
+    background-color: #fff;
+    border-radius: 50px;
+    height: 50vh;
+    padding: 100px;
+    color: #000;
+    box-shadow: 0px 0px 20px 1px #fff;
+}
+
+.sec7-head {
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+.blue-text {
+    color: blue;
+}
+
+.company-img{
+    margin: 25px;
+}
+.sec7-companies-logos {
+    width: 70%;
+
+}
+
+.sec7-right-card {
+    background-color: #000;
+    border-radius: 15px;
+    padding: 40px;
+    width: 43%;
+    transition: 0.4s;
+}
+.sec7-right-card:hover {
+    box-shadow: 0px 0px 20px 1px #000;
+}
+
+.sec7-right-card-head {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.yellow-text {
+    color: blue;
+}
+.sec7-right-card-button {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #825fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sec7-right-card-para {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sec7-right-card-span {
+    color: skyblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* section 8 */
+.sec8-container {
+}
+
+/* section 9 */
+
+.sec9-container {
+    background-color: #fff;
+    border-radius: 50px;
+    height: 120vh;
+    padding: 100px;
+    color: #000;
+    box-shadow: 0px 0px 20px 1px #fff;
+    position: relative;
+    top: 20px;
+}
+
+.sec8-head {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* blog section carousel */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.swiper-container {
+    width: 80%;
+}
+.carousel-container {
+    width: 80%;
+    position: relative;
+    left: 100px;
+}
+  .carousel-card {
+  }
+.blog-img {
+    width: 30px;
+    height: 50px;
+    border-radius: 50px;
+  }
+.blog-sec-head {
+    font-weight: bold;
+    font-size: 40px;
+    width: 70vw;
+    margin-top: 20px;
+}
+
+.blog-content {
+    background-color: #000000;
+    position: relative;
+    bottom: 60px;
+    height: 160px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .blog-time {
+    color: grey;
+    margin-bottom: 10px;
+  }
+.blog-des {
+    font-size: 17px;
+}
+
+.view-more-line {
+    height: 2px;
+    background-color: #825fff;
+    width: 74px;
+    border-radius: 10px;
+}
+.view-more {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+
+/* Footer */
+
+.footer-container-1 {
+    background-color: #4d4d4d;
+    position: relative;
+    bottom: 50px;
+    height: 105vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 50px;
+    padding: 70px;
+}
+.footer-head {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 180px;
+}
+.avg-para {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.six{
+    font-size: 45px;
+}
+.seven {
+    position: relative;
+    top: 10px;
+}
+
+.footer-container-2 {
+    background-color: #fff;
+    padding: 70px;
+    position: relative;
+    bottom: 130px;
+    height: 61vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 50px;
+    color: #000;
+}
+.solutions {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.solution-para {
+    width: 25%;
+    color: grey;
+}
+
+.solution-gap-line {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 1px;
+    background-color: #00000060;
+}
+
+.social-media-handle-logo {
+    font-size: 30px;
+}

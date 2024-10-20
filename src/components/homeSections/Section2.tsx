@@ -28,7 +28,7 @@ const words = [
 
 export default function Section2() {
     useEffect(() => {
-        let t1 = gsap.timeline({
+        const t1 = gsap.timeline({
             scrollTrigger:{
                 trigger: ".sec2-container",
                 start: "80% 50%",
@@ -43,11 +43,21 @@ export default function Section2() {
         })
     })
     return (
+      <>
+      <div className="Companies-partner mx-6 flex">
+        <h2 className="partner-not-ventor">A PARTNER, NOT<br /> A VENDOR</h2>
+        <Image className="sec2-company-logo" src="https://numerique.vamtam.com/wp-content/uploads/2023/05/meta-partner.svg" width={100} height={100} alt="company logo"  />
+        <Image className="sec2-company-logo" src="https://numerique.vamtam.com/wp-content/uploads/2023/05/google-cloud.svg" width={100} height={100} alt="company logo"  />
+        <Image className="sec2-company-logo" src="https://numerique.vamtam.com/wp-content/uploads/2023/05/google-partner.svg" width={100} height={100} alt="company logo"  />
+        <Image className="sec2-company-logo" src="https://numerique.vamtam.com/wp-content/uploads/2023/05/shopify.svg" width={100} height={100} alt="company logo"  />
+        <Image className="sec2-company-logo" src="https://numerique.vamtam.com/wp-content/uploads/2023/05/tiktok.svg" width={100} height={100} alt="company logo"  />
+      </div>  
         <div className="sec2-container">
             <Image width={150} height={150} src={adclickImage} alt="acmlogo" className="mb-3"/>
             
             <TypewriterEffect words={words} />
         </div>
+      </>
     )
 }
 

@@ -13,7 +13,7 @@ export default function Cursor() {
             gsap.to(cursor,{x: clientX, y: clientY})
         } 
 
-        const onMouseEnterLink = (event: any) => {
+        const onMouseEnterLink = (event) => {
             const link = event.target;
             if (link.classList.contains("view")) {
                 gsap.to(cursor, {scale: 4})

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useEffect } from "react";
 import {
   motion,
   useScroll,
@@ -9,8 +10,10 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import gsap from "gsap";
 
 export const HeroParallax = ({
+  
   products,
 }: {
   products: {
@@ -29,6 +32,21 @@ export const HeroParallax = ({
     target: ref,
     offset: ["start start", "end start"],
   });
+  useEffect(() => {
+    const t1 = gsap.timeline({
+        scrollTrigger:{
+            trigger: ".text-anime-cont",
+            start: "30% 50%",
+            end: "100% 50%",
+            markers: true,
+            scrub: 1
+        },
+        
+    })
+    t1.to(".text-area-hover", {
+        width: "100%"
+    })
+})
 
   const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
 
@@ -112,10 +130,12 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-      Optimize Costs With <br /> Built-In Technology for <br /> Accelerating ROI
-      </h1>
+    <div className="text-anime-cont max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
+      <h2 className="text-2xl md:text-7xl font-bold dark:text-white">
+      Data-driven, customer-<br />centric digital services
+      </h2>
+      <h2 className="text-2xl md:text-7xl font-bold dark:text-white">
+      </h2>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
       Forget expensive tech that take months to implement. From marketing automation software to customer relationship management, our USA digital marketing company provides the martech businesses need to:
       </p>
@@ -167,7 +187,7 @@ export const ProductCard = ({
             alt={product.title}
             />
             <div className="sec6-card-content">
-                <h1 className="sec6-card-head text-center" >{head}</h1>
+                <h2 className="sec6-card-head text-center" >{head}</h2>
                 <p className="sec6-card-para">{para}</p>
                 <ul className="sec6-content-list">
                     <li className="sec6-content-list-item">Automatically calculate cost per lead per marketing channel</li>    
@@ -179,7 +199,7 @@ export const ProductCard = ({
             </div>
         </div>
       </Link>
-      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
+      <div className="absolute inset-0 h-full w-full opacity-0  bg-black pointer-events-none"></div>
       <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
         {product.title}
       </h2>

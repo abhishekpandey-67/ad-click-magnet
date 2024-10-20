@@ -1,16 +1,18 @@
-"use client";
 
+
+//const Spline = dynamic(() => import('@splinetool/react-spline').then(mod => mod.default), {
+//  ssr: false,
+//});
 import Spline from '@splinetool/react-spline/next';
+
 import '../app.css';
 export default function HeroModel() {
-
-  
   
   return (
-    <main>
+    <div>
       <Spline className="model"
-        scene="https://prod.spline.design/oQCJ6NyfdekmV22y/scene.splinecode"
+        scene="https://prod.spline.design/xGBBKsEMeyKcN8gb/scene.splinecode"
       />
-    </main>
+    </div>
   );
 }
