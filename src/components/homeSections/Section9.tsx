@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import React, { useEffect } from "react";
-import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
+//import Image from "next/image";
+import React from "react";
+//import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Link from "next/link";
-import { TypewriterEffect } from "../ui/typewriter-effect";
+//import { TypewriterEffect } from "../ui/typewriter-effect";
 import Carousel from "../ui/carousel";
 
 

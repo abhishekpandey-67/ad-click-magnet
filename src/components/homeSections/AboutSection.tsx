@@ -5,7 +5,7 @@ export default function AboutSection() {
             <div className="flex justify-center ">
                 <h2 className="about-sec-head">We combines<br /> customer data with<br /> thoughtful work</h2>
                 <div className="about-sec-right-cont">
-                    <p className="about-sec-right-para">Numerique is a tech-enabled digital marketing solutions provider, and we create custom strategies for each of our clients based on their needs and goals. As a result, we’ve driven over $3 billion in sales and over 7.8 million leads for our clients.</p>
+                    <p className="about-sec-right-para">ACM is a tech-enabled digital marketing solutions provider, and we create custom strategies for each of our clients based on their needs and goals. As a result, we’ve driven over $3 billion in sales and over 7.8 million leads for our clients.</p>
                     
                     <span className="more-about">MORE ABOUT OUR UNIQUE APPROACH</span>
                     <hr className="more-about-underline"/>

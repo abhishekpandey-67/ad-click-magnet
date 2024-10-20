@@ -2,17 +2,10 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Input, Label } from '../ui/form';
 import { cn } from "@/lib/utils";
 import { FaInstagram, FaTwitter, FaFacebook, FaYoutube   } from "react-icons/fa6";
 
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 
 export default function Footer() {
@@ -57,11 +50,11 @@ export default function Footer() {
         </div>
 
         <hr className="solution-gap-line" />
-
+      
         <div className="term-and-condition-cont flex justify-between items-center">
           <div className="term-and-condition-content flex items-center gap-6">
             <p>© 2024
-            Numerique</p>
+            ACM</p>
             <p>Terms & Conditions</p>
             <p>Privacy Policy</p>
           </div>
@@ -121,7 +114,7 @@ export function SignupFormDemo() {
           className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
         >
-          Sign up &rarr;
+          Submit &rarr;
           <BottomGradient />
         </button>
 

@@ -69,10 +69,10 @@ export function PlaceholdersAndVanishInput({
     const pixelData = imageData.data;
     const newData: any[] = [];
 
-    for (let t = 0; t < 800; t++) {
-      let i = 4 * t * 800;
-      for (let n = 0; n < 800; n++) {
-        let e = i + 4 * n;
+    for (const t = 0; t < 800; t++) {
+      const i = 4 * t * 800;
+      for (const n = 0; n < 800; n++) {
+        const e = i + 4 * n;
         if (
           pixelData[e] !== 0 &&
           pixelData[e + 1] !== 0 &&
@@ -108,7 +108,7 @@ export function PlaceholdersAndVanishInput({
     const animateFrame = (pos: number = 0) => {
       requestAnimationFrame(() => {
         const newArr = [];
-        for (let i = 0; i < newDataRef.current.length; i++) {
+        for (const i = 0; i < newDataRef.current.length; i++) {
           const current = newDataRef.current[i];
           if (current.x < pos) {
             newArr.push(current);
