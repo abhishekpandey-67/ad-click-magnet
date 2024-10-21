@@ -21,6 +21,7 @@ export function PlaceholdersAndVanishInput({
       setCurrentPlaceholder((prev) => (prev + 1) % placeholders.length);
     }, 3000);
   };
+
   const handleVisibilityChange = () => {
     if (document.visibilityState !== "visible" && intervalRef.current) {
       clearInterval(intervalRef.current); // Clear the interval when the tab is not visible
@@ -69,9 +70,9 @@ export function PlaceholdersAndVanishInput({
     const pixelData = imageData.data;
     const newData: any[] = [];
 
-    for (const t = 0; t < 800; t++) {
+    for (let t = 0; t < 800; t++) {
       const i = 4 * t * 800;
-      for (const n = 0; n < 800; n++) {
+      for (let n = 0; n < 800; n++) {
         const e = i + 4 * n;
         if (
           pixelData[e] !== 0 &&
@@ -107,8 +108,8 @@ export function PlaceholdersAndVanishInput({
   const animate = (start: number) => {
     const animateFrame = (pos: number = 0) => {
       requestAnimationFrame(() => {
-        const newArr = [];
-        for (const i = 0; i < newDataRef.current.length; i++) {
+        const newArr: any[] = [];
+        for (let i = 0; i < newDataRef.current.length; i++) {
           const current = newDataRef.current[i];
           if (current.x < pos) {
             newArr.push(current);
@@ -174,6 +175,7 @@ export function PlaceholdersAndVanishInput({
     vanishAndSubmit();
     onSubmit && onSubmit(e);
   };
+  
   return (
     <form
       className={cn(
@@ -184,7 +186,7 @@ export function PlaceholdersAndVanishInput({
     >
       <canvas
         className={cn(
-          "absolute pointer-events-none  text-base transform scale-50 top-[20%] left-2 sm:left-8 origin-top-left filter invert dark:invert-0 pr-20",
+          "absolute pointer-events-none text-base transform scale-50 top-[20%] left-2 sm:left-8 origin-top-left filter invert dark:invert-0 pr-20",
           !animating ? "opacity-0" : "opacity-100"
         )}
         ref={canvasRef}
