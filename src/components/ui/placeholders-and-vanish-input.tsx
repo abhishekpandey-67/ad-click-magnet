@@ -43,7 +43,7 @@ export function PlaceholdersAndVanishInput({
   }, [placeholders]);
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const newDataRef = useRef<any[]>([]);
+  const newDataRef = useRef<unknown[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
   const [value, setValue] = useState("");
   const [animating, setAnimating] = useState(false);
@@ -67,11 +67,11 @@ export function PlaceholdersAndVanishInput({
 
     const imageData = ctx.getImageData(0, 0, 800, 800);
     const pixelData = imageData.data;
-    const newData: any[] = [];
+    const newData = [];
 
-    for (const t = 0; t < 800; t++) {
+    for (let t = 0; t < 800; t++) {
       const i = 4 * t * 800;
-      for (const n = 0; n < 800; n++) {
+      for (let n = 0; n < 800; n++) {
         const e = i + 4 * n;
         if (
           pixelData[e] !== 0 &&
@@ -108,8 +108,8 @@ export function PlaceholdersAndVanishInput({
     const animateFrame = (pos: number = 0) => {
       requestAnimationFrame(() => {
         const newArr = [];
-        for (const i = 0; i < newDataRef.current.length; i++) {
-          const current = newDataRef.current[i];
+        for (let i = 0; i < newDataRef.current.length; i++) {
+          const current: {x:number, y: number, r: number} = newDataRef.current[i];
           if (current.x < pos) {
             newArr.push(current);
           } else {
@@ -128,6 +128,7 @@ export function PlaceholdersAndVanishInput({
         if (ctx) {
           ctx.clearRect(pos, 0, 800, 800);
           newDataRef.current.forEach((t) => {
+            // eslint-disable-next-line @typescript-eslint/no-unused-expressions
             const { x: n, y: i, r: s, color: color } = t;
             if (n > pos) {
               ctx.beginPath();
@@ -162,6 +163,7 @@ export function PlaceholdersAndVanishInput({
     const value = inputRef.current?.value || "";
     if (value && inputRef.current) {
       const maxX = newDataRef.current.reduce(
+        
         (prev, current) => (current.x > prev ? current.x : prev),
         0
       );
@@ -172,6 +174,7 @@ export function PlaceholdersAndVanishInput({
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     vanishAndSubmit();
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     onSubmit && onSubmit(e);
   };
   return (
@@ -193,6 +196,7 @@ export function PlaceholdersAndVanishInput({
         onChange={(e) => {
           if (!animating) {
             setValue(e.target.value);
+            // eslint-disable-next-line @typescript-eslint/no-unused-expressions
             onChange && onChange(e);
           }
         }}

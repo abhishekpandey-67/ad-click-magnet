@@ -564,7 +564,7 @@ body{
     background-color: #4d4d4d;
     position: relative;
     bottom: 50px;
-    height: 105vh;
+    height: 120vh;
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 50px;
@@ -590,7 +590,6 @@ body{
 
 .footer-container-2 {
     background-color: #E2E2E2;
-    ;
     padding: 70px;
     position: relative;
     bottom: 130px;

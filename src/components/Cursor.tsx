@@ -6,18 +6,19 @@ export default function Cursor() {
     useEffect(() => {
         const cursor = document.getElementById("custom-cursor");
         const links = document.querySelectorAll("a");
-        const cursorText = document.querySelector(".cursor-text");
-
-        const onMouseMove = (event) => {
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+        //const cursorText = document.querySelector(".cursor-text") ;
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+        const onMouseMove = (event: MouseEvent) => {
             const {clientX, clientY} = event;
             gsap.to(cursor,{x: clientX, y: clientY})
         } 
-
-        const onMouseEnterLink = (event) => {
-            const link = event.target;
-            if (link.classList.contains("view")) {
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+        const onMouseEnterLink = (event: MouseEvent) => {
+            const link = event.target as Element | null;
+            if (link && link.classList.contains("view")) {
                 gsap.to(cursor, {scale: 4})
-                cursorText.style.display = "block"
+                //cursorText.style.display = "block"
             }else {
                 gsap.to(cursor, {scale: 4})
             }
@@ -25,7 +26,7 @@ export default function Cursor() {
 
         const onMouseLeave = () => {
             gsap.to(cursor, {scale:1})
-            cursorText.style.display = "none";
+            //cursorText.style.display = "none";
         }
 
         document.addEventListener("mousemove", onMouseMove)
