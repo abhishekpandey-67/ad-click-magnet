@@ -151,8 +151,6 @@ export const Header = () => {
 export const ProductCard = ({
   product,
   translate,
-  head,
-  para
 }: {
   product: {
     title: string;
@@ -162,6 +160,8 @@ export const ProductCard = ({
     para: string;
   };
   translate: MotionValue<number>;
+  head: string;
+  para: string;
 }) => {
   return (
     <motion.div
@@ -187,8 +187,8 @@ export const ProductCard = ({
             alt={product.title}
             />
             <div className="sec6-card-content">
-                <h2 className="sec6-card-head text-center" >{head}</h2>
-                <p className="sec6-card-para">{para}</p>
+                <h2 className="sec6-card-head text-center" >{product.head}</h2>
+                <p className="sec6-card-para">{product.para}</p>
                 <ul className="sec6-content-list">
                     <li className="sec6-content-list-item">Automatically calculate cost per lead per marketing channel</li>    
                     

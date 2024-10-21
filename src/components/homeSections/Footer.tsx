@@ -108,6 +108,11 @@ export function SignupFormDemo() {
           <Label htmlFor="password">Phone Number</Label>
           <Input id="password" placeholder="+911234567889" type="password" />
         </LabelInputContainer>
+
+        <LabelInputContainer className="mb-4">
+          <Label htmlFor="message">Drop a Message</Label>
+          <Input id="message" placeholder="What can we help you with?" type="text" />
+        </LabelInputContainer>
         
 
         <button
